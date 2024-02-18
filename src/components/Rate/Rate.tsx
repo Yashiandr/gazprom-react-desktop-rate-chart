@@ -52,9 +52,9 @@ const ChoiceCurrency: React.FC<Props> =  ({ value, setValue }) => {
 
 
 export const Rate = () => {
-    const [ value, setValue ] = useState<Item | null>(items[2]);
+    const [ value, setValue ] = useState<Item | null>(items[0]);
     let findData : IFindData = filterDataBySymbol(value, data)
-
+    
     const option = {
       tooltip: {
         trigger: 'axis',
@@ -112,10 +112,10 @@ export const Rate = () => {
           },
           {
             type: 'text',
-            right: 25,
+            right: 35,
             bottom: 220,
             style: {
-              text: `${findData.average} `,
+              text: findData.average,
               font: '48px Inter',
               fill: '#F38B00'
             }
