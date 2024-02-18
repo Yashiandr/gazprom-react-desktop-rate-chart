@@ -112,10 +112,10 @@ export const Rate = () => {
           },
           {
             type: 'text',
-            right: 40,
+            right: 25,
             bottom: 220,
             style: {
-              text: findData.average,
+              text: `${findData.average} `,
               font: '48px Inter',
               fill: '#F38B00'
             }
